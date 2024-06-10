@@ -1,0 +1,82 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./profiledefault.css");
+
+
+.form_container{
+    gap: 1rem;
+}
+
+.form_heading{
+    justify-content: space-between;
+}
+
+.form_heading h2{
+    color: var(--secondaryRed);
+}
+
+.form_heading span{
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: var(--secondaryRed);
+}
+
+.inputdiv{
+    gap: 1rem;
+    padding: 20px 0;
+    
+}
+
+.radio {
+    margin-right: 30px;
+    
+}
+
+.radio label{
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+.inputdiv input{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    border: 2px solid var(--secondaryRed);
+    outline: none;
+    border-radius: 5px;
+}
+
+.form_footer input ,.radio input{
+width: 1.4rem;
+height: 1.4rem;
+accent-color: var(--secondaryRed);
+}
+
+.btn{
+    padding: 20px 0;
+}
+
+.btn_css{
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--secondaryRed);
+    transition: .3s ease-in;
+    border: 1px solid var(--secondaryRed);
+
+}
+
+.btn_css:hover{
+    background: transparent;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .inputdiv{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

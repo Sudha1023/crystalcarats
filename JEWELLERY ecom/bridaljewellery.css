@@ -1,0 +1,67 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./sidebar.css");
+
+.home_container_heading {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.contentDivBridal {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contentDivBridal img {
+  width: 60%;
+  object-fit: contain;
+}
+
+.contentDivBridal_div {
+  width: 320px;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+
+.contentDivBridal_div:hover{
+  transform: scale(1.04)
+
+}
+
+.img_heading {
+  color: white;
+  background-color: var(--secondaryRed);
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 889px) {
+  .contentDivBridal {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home_container_heading {
+    font-size: 1rem;
+  }
+  .contentDivBridal img {
+    width: 70%;
+  }
+
+  .menu_sidebar {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .home_container_heading {
+    font-size: 0.9rem;
+  }
+}

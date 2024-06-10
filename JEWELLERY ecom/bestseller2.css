@@ -1,0 +1,18 @@
+.scroll_to_top {
+  margin-left: 45px;
+  margin-right: 0;
+}
+
+.sidebar {
+  top: 35px;
+}
+
+.menu_sidebar {
+  top: 0px;
+}
+
+@media screen and (max-width: 468px) {
+  .scroll_to_top {
+    margin: 0;
+  }
+}

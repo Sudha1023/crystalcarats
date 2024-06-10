@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./adminviewproduct.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header flex_center">
+      <nav>
+        <h2>Dashboard</h2>
+      </nav>
+      <div class="logo">
+        <img src="../images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="second_nav flex_center">
+          <li>
+            <a href="../profile.html">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+          </li>
+          <a href="./adminlogin.html">
+            <button class="btn_css">Login</button>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- sidebar main div code -->
+      <div class="flex">
+        <div class="sidebar flex flex_col">
+          <a class="active_tag" href="#">
+            <p>Product</p>
+          </a>
+          <a href="./categories.html">
+            <p>Categories</p>
+          </a>
+          <a href="./sliderimg.html">
+            <p>Slider Images</p>
+          </a>
+          <a href="./viewcustomer.html">
+            <p>View Customer</p>
+          </a>
+          <a href="./vieworder.html">
+            <p>View Orders</p>
+          </a>
+          <a href="./viewpayments.html">
+            <p>View Payments</p>
+          </a>
+        </div>
+        <div class="menu_sidebar">
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <!-- sidebar code end -->
+        <!-- content code start -->
+        <div class="contentDivbestseller fixed">
+          <h2 class="main_heading">View Product</h2>
+
+          <div class="table_div">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th>Id</th>
+                  <th>Title</th>
+                  <th>Image</th>
+                  <th>Price</th>
+                  <th>Category</th>
+                  <th>Qty</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bb">
+                  <td>1</td>
+                  <td>Necklace</td>
+                  <td>
+                    <img src="../images/b1.png" alt="" />
+                  </td>
+                  <td>4685</td>
+                  <td>Gold</td>
+                  <td>1</td>
+                  <td class="action_div flex_center_centerAll gap">
+                    <span class="material-symbols-outlined"> edit_square </span>
+                    <span class="material-symbols-outlined"> delete </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar main div -->
+    </div>
+
+    <script src="../js.js"></script>
+  </body>
+</html>

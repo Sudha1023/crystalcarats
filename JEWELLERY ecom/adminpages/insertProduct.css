@@ -1,0 +1,110 @@
+@import url("../default.css");
+@import url("../headerfooter.css");
+@import url("../sidebar.css");
+@import url("./admindefault.css");
+
+.insert_product_div{
+    gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+
+.insert_inner_div{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.insert_inner_div label{
+    font-size: 1.2rem;
+    color: var(--secondaryRed);
+    font-weight: bold;
+}
+
+.insert_inner_div input{
+    padding: 15px 10px;
+    min-width:60% ;
+    outline: none;
+    border: 1px solid var(--secondaryRed);
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+}
+
+.insert_inner_div textarea{
+    min-width:60% ;
+    border: 1px solid var(--secondaryRed);
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    padding: 15px 10px;
+    resize: none;
+}
+
+.insert_inner_div select{
+    padding: 15px 10px;
+    min-width:60% ;
+    outline: none;
+    border: 1px solid var(--secondaryRed);
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.whalf{
+    width: 60%;
+}
+
+.imgpreview {
+    width: 100%;
+    border: 1px solid var(--secondaryRed);
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    padding: 15px 10px;
+    
+}
+
+.insert_inner_div .imgselect{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 0.5em;
+    border: 1px solid var(--secondaryRed);
+    border-radius: 8px;
+  }
+
+.buttons a{
+    width: 100%;
+}
+
+.buttons button{
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    border-style: solid;
+    cursor: pointer;
+    border-width: 1px;
+}
+
+.viewbtn{
+    background-color: var(--secondaryRed);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.insertbtn{
+    background-color: #E8AB9D;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+}
+.sidebar {
+  flex: 0.2;
+  background-color: white;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.sidebar_heading {
+  padding: 10px 20px;
+}
+
+.sidebar_innerdiv {
+  gap: 2rem;
+  padding: 10px 20px;
+}
+
+/* code for sidebar menu */
+.menu_sidebar {
+  display: none;
+  cursor: pointer;
+}
+
+/* code for contentDiv */
+.contentDiv {
+  padding: 30px 20px;
+  flex: 1;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: absolute;
+    left: -280px;
+    bottom: 0;
+    top: 43px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+  }
+
+  .sidebaropen {
+    left: 0;
+  }
+  /* code for menu icon */
+  .menu_sidebar {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    display: block;
+  }
+
+  .menu_sidebar span {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .menu_sidebar {
+    top: 9px;
+  }
+}

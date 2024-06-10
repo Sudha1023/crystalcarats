@@ -1,0 +1,151 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./sidebar.css");
+
+.home_container_heading {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.price_tag {
+  background-color: #d9d9d9;
+
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 6px 4px 0px #00000040;
+}
+
+.contentDivbestseller {
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main_heading {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 10px 0;
+}
+
+.images_section {
+  padding: 10px 0;
+}
+
+.images_section p {
+  padding: 10px 0;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.7rem;
+  padding-bottom: 40px !important;
+}
+
+/* code for card images */
+
+.images_section_images {
+  gap: 1rem;
+  cursor: pointer;
+  width: 230px;
+  transition: transform 0.3s ease-in;
+}
+
+.images_section_images:hover {
+  transform: scale(1.04);
+}
+
+.images_section_images_div {
+  height: 260px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.images_section_images_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.images_section_inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+
+/* content div footer */
+
+.contentDiv_footer {
+  align-items: center;
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+.scroll_to_top {
+  padding: 8px 15px;
+  background-color: var(--secondaryRed);
+  color: white;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.contentDiv_footer_buttons {
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.contentDiv_footer_buttons a {
+  color: black;
+  font-size: 1.4rem;
+}
+
+.next_button span {
+  margin-top: 5px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.active_page {
+  border-bottom: 2px solid var(--secondaryRed);
+}
+
+@media screen and (max-width: 868px) {
+  .images_section_inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu_sidebar {
+    top: 24px;
+  }
+  .sidebar {
+    top: 55px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .images_section_inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contentDivbestseller {
+    flex: 1;
+  }
+  .images_section_images {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .scroll_to_top {
+    margin-right: 0;
+  }
+}

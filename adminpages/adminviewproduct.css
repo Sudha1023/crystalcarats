@@ -1,0 +1,16 @@
+@import url("./insertProduct.css");
+@import url("./viewcustomer.css");
+
+.table tbody tr td img {
+  object-fit: contain;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.action_div {
+  height: 92px;
+}
+
+.action_div span {
+  cursor: pointer;
+}

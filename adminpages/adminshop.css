@@ -1,0 +1,22 @@
+.buttondiv{
+    width: 100%;
+    gap: 2rem;
+}
+
+.buttondiv button{
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.updatebtn{
+    background-color: green;
+}
+
+.deletebtn{
+    background-color: var(--secondaryRed);
+}

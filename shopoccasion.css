@@ -1,0 +1,31 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./sidebar.css");
+
+.home_container_heading{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.contentDiv_threeImg{
+    justify-content: space-between;
+}
+
+.contentDiv img{
+    transition: .3s ease-in;
+}
+
+.contentDiv img:hover{
+    transform: scale(1.04);
+}
+
+@media screen and (max-width:468px) {
+    .home_container_heading{
+        font-size: 1rem;
+    }
+    .content_innerImg{
+        flex-direction: column;
+    }
+}

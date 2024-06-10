@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./buynow.css" />
+    <title>crystals & carats</title>
+  </head>
+  <body>
+    <!-- code for header -->
+    <header class="header flex_center">
+      <div class="ham">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <nav>
+        <ul class="first_nav flex_center">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./crystals.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="second_nav flex_center">
+          <li>
+            <a href="#">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- product overview -->
+
+    <div class="product_overview flex">
+      <div class="product_overview_left flex_center_centerAll flex_col">
+        <img src="./images/diamond ring crys.jpg" alt="" />
+        <div class="product_overview_left_buttons flex flex_col">
+          <button>Remove from Cart</button>
+          <button>Move to Wishlist</button>
+        </div>
+      </div>
+      <div class="product_overview_right">
+        <div class="product_overview_right_detail flex flex_col">
+          <div class="detail">
+            <h2>Crystals & Carats</h2>
+            <p>
+              Stylish Golden Necklace Fashionable Round Fisher Gold Plated
+              Necklace Gold-plated Plated Necklace 20carat Gold Necklace
+            </p>
+          </div>
+          <div class="price">
+            <p class="price_heading">Special Price</p>
+            <div class="price_container flex_center">
+              <h2>Rs.7500</h2>
+              <p>Rs 10000</p>
+              <h3>25% off</h3>
+            </div>
+
+            <div class="round_qty flex gap">
+              <h2>Qty:</h2>
+              <select class="dropdown_qty" name="qty" id="qyt">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+          </div>
+<!-- code for offers -->
+          <div class="offers">
+            <button class="white flex">
+              <img src="./images/bsave.svg" alt="" />
+              <div>
+                <h2>EXTRA10</h2>
+                <p>Save another 10000 on this order</p>
+              </div>
+              <p class="apply">Apply</p>
+            </button>
+            <button class="flex gap pink">
+              <img src="./images/sbi.svg" alt="" /> 5% Instant Discount on SBI
+              Credit Cards....
+            </button>
+            <button class="white py">Apply More Coupons</button>
+            <button class="pink py">Bank Offers</button>
+          </div>
+
+          <div class="address flex fwrap">
+            <div class="address_header flex flex_col">
+              <div class="address_header_upper flex flex_col">
+                <div class="flex_center gap">
+                  <img src="./images/search.svg" alt="" />
+                  <p>Deliver to</p>
+                </div>
+                <div class="pincode flex_center gap">
+                  <input type="text" placeholder="Enter Pincode" />
+                  <button class="check_button">Check</button>
+                </div>
+              </div>
+              <div>
+                <p>Delivery by 21 Dec, Thursday</p>
+                <p>Free Delivery <span class="color"> T&C* applied</span></p>
+              </div>
+            </div>
+            <div class="address_right flex_center_centerAll flex_col">
+              <h2>ORDER SUMMARY</h2>
+              <div class="address_right_content flex gap">
+                <div class="address_right_content_heading">
+                  <p>Subtotal</p>
+                  <p>Sale Discount</p>
+                  <p>Coupon Discount</p>
+                  <p>Delivery Charge</p>
+                  <h2>TOTAL (incl of all taxes.)</h2>
+                  <p class="green">You Saved</p>
+                </div>
+                <div class="address_right_content_price">
+                  <p>Rs 10000</p>
+                  <p>Rs 2500</p>
+                  <p>Rs 500</p>
+                  <p>Free</p>
+                  <h2>Rs 7000</h2>
+                  <p class="green">+ Rs 3000</p>
+                </div>
+              </div>
+              <button class="checkout_button">Proceed to Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

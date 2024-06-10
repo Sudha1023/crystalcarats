@@ -1,0 +1,21 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+
+.gift_section{
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.gift_section_imgDiv{
+    background-color: white;
+    text-align: center;
+    max-width: 320px;
+}
+
+
+
+.gift_section_imgDiv p{
+    padding: 10px 10px;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,105 @@
+.main_heading {
+  background: #e8ab9d;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.sidebar {
+  padding: 20px;
+}
+
+.sidebar p {
+  font-size: 1.3rem;
+  padding: 5px 0;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+.sidebar p:hover {
+  text-decoration: underline;
+  color: var(--secondaryRed);
+}
+
+.active_tag {
+  color: var(--secondaryRed);
+}
+.contentDivbestseller {
+  min-height: 85dvh;
+  flex: 0.8;
+}
+
+.btn_css {
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  color: white;
+  background-color: var(--secondaryRed);
+  transition: 0.3s ease-in;
+  border: 1px solid var(--secondaryRed);
+}
+
+.btn_css:hover {
+  background: transparent;
+  color: black;
+}
+
+/* admin login page */
+.innerDiv{
+    height: 100dvh;
+    width: 100%;
+}
+
+.formdiv{
+    background-color: #FFFFFF;
+}
+
+.formHeader{
+    border-color: #D27F7F ;
+    border-width: 2px;
+}
+
+.formContent{
+    justify-content: space-evenly;
+}
+
+.inner_form{
+    width: 100%;
+    gap: 1rem;
+}
+
+.input_box{
+    border-color: #D27F7F ;
+}
+
+
+.btns{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.btn_div{
+  width: 100%;
+}
+
+.btn_div p {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contentDivbestseller {
+    flex: 1;
+  }
+
+  .formdiv {
+    background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.85)
+      ),
+      url("../images/adminloginimg.png");
+  }
+}

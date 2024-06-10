@@ -1,0 +1,49 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./profiledefault.css");
+
+.body_content{
+    padding: 20px 10px;
+    gap: 1rem;
+}
+
+.body_content_imgdiv {
+    max-width: 340px;
+}
+
+.body_content_imgdiv img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.buttons{
+    width: 100%;
+    padding: 10px 15px;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+.tp {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn_css{
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--secondaryRed);
+    transition: .3s ease-in;
+    border: 1px solid var(--secondaryRed);
+
+}
+
+.btn_css:hover{
+    background: transparent;
+    color: black;
+}

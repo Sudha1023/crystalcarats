@@ -1,0 +1,30 @@
+@import url("./insertProduct.css");
+@import url("./viewcustomer.css");
+
+
+.status_div{
+    height: 92px;
+}
+
+.status_div button{
+    padding: 5px;
+    outline: none;
+    color: white;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.status_div button:hover{
+    background:transparent;
+    color: black;
+}
+
+.status_div .pending{
+    background-color: #feca57;
+    border: 2px solid #feca57;
+}
+
+.status_div .delivered{
+    background-color: #1dd1a1;
+    border: 2px solid #1dd1a1;
+}

@@ -1,0 +1,85 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./profiledefault.css");
+
+
+.card_section{
+    justify-content: space-between;
+    padding: 30px 10px;
+    gap: 2rem;
+}
+.card_section_div{
+    gap: 1rem;
+
+}
+
+.card_heading{
+    justify-content: space-between;
+}
+
+
+.card_heading h2{
+    color: var(--secondaryRed);
+}
+
+.icons{
+    cursor: pointer;
+}
+
+.icons span{
+    font-size: 1.6rem;
+    color: var(--secondaryRed);
+}
+
+.btn_css{
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--secondaryRed);
+    transition: .3s ease-in;
+    border: 1px solid var(--secondaryRed);
+
+}
+
+.btn_css:hover{
+    background: transparent;
+    color: black;
+}
+
+/* card */
+
+.card_body{
+    gap: 1rem;
+}
+
+.cardNumber_inputDiv input{
+    width: 100%;
+    border: 2px solid var(--secondaryRed);
+    padding: 10px 5px;
+    outline: none;
+}
+
+.valid_div{
+    border: 2px solid var(--secondaryRed);
+}
+
+.valid_div input{
+   outline: none;
+   border: none;
+   padding: 10px 5px;
+}
+
+.valid_div select{
+   border: none;
+   outline: none;
+   padding: 10px 5px;
+}
+.cvv{
+    outline: none;
+    border: 2px solid var(--secondaryRed);
+
+    padding: 10px 5px;
+}

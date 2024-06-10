@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./notification.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <!-- code for header -->
+    <header class="header flex_center">
+      <div class="ham">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <nav>
+        <ul class="first_nav flex_center">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./crystals.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="second_nav flex_center">
+          <li>
+            <a href="#">
+              <img src="./images/heart.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./cart.html"> <img src="./images/cart.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container_profile flex">
+      <div class="profile_sidebar flex">
+        <div class="profile__section flex_center gap">
+          <div class="user_icon">
+            <span class="material-symbols-outlined"> account_circle </span>
+          </div>
+          <div class="flex flex_col">
+            <p>Hii</p>
+            <h2>Sudha Chandravanshi</h2>
+          </div>
+        </div>
+
+        <div class="sidebar_content flex flex_col">
+          <a href="./myorders.html">
+            <div class="sidebar_heading flex_center gap">
+              <span class="material-symbols-outlined"> local_mall </span>
+              <h2>My Orders</h2>
+            </div>
+          </a>
+        </div>
+
+        <div class="sidebar_content flex flex_col gap">
+          <div class="sidebar_heading flex_center gap">
+            <span class="material-symbols-outlined">
+              settings_account_box
+            </span>
+            <h2>Account Settings</h2>
+          </div>
+          <div class="sidebar_links flex flex_col gap">
+            <a href="./profile.html">
+              <p>Profile Information</p>
+            </a>
+            <a href="./manageaddress.html">
+              <p>Manage Address</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar_content flex flex_col gap">
+          <div class="sidebar_heading flex_center gap">
+            <span class="material-symbols-outlined">
+              account_balance_wallet
+            </span>
+            <h2>Payments</h2>
+          </div>
+          <div class="sidebar_links flex flex_col gap">
+            <a href="./savecard.html">
+              <p>Saved Cards</p>
+            </a>
+            <a href="./saveupi.html">
+              <p>Saved UPI ids</p>
+            </a>
+
+            <a href="./savegiftcard.html">
+              <p>Gift Cards</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar_content flex flex_col gap">
+          <div class="sidebar_heading flex_center gap">
+            <span class="material-symbols-outlined"> favorite </span>
+            <h2>My Stuff</h2>
+          </div>
+          <div class="sidebar_links flex flex_col gap">
+            <a href="./wishlist.html">
+              <p>My Wishlist</p>
+            </a>
+            <a href="./coupons.html">
+              <p>My Coupons</p>
+            </a>
+
+            <a href="./reviews.html">
+              <p>My Reviews</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar_content flex flex_col gap">
+          <div class="sidebar_heading flex_center gap">
+            <span class="material-symbols-outlined"> settings </span>
+            <h2>Settings</h2>
+          </div>
+          <div class="sidebar_links flex flex_col gap">
+            <a class="active_sidebarlink" href="#">
+              <p>Notifications</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar_content flex flex_col gap">
+          <a href="./index.html">
+            <div class="sidebar_heading flex_center gap">
+              <span class="material-symbols-outlined">
+                power_settings_new
+              </span>
+              <h2>Logout</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="menu_sidebar2">
+        <span class="material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+      <div class="profile_content fixed">
+        <h2 class="profile_mainheading">Notification Preferences</h2>
+
+        <div class="notification_div flex flex_col">
+          <div class="notification flex flex_col">
+            <h2>Email Notifications</h2>
+            <div class="checkbox_div flex gap fwrap">
+              <div class="checkboxs gap flex_center">
+                <input type="checkbox" name="myorders" id="myorders" />
+                <label for="myorders">My Orders</label>
+              </div>
+
+              <div class="checkboxs gap flex_center">
+                <input type="checkbox" name="Reminder" id="Reminder" />
+                <label for="Reminder">Reminder for Cart & Wishlist</label>
+              </div>
+
+              <div class="checkboxs gap flex_center">
+                <input type="checkbox" name="Offers" id="Offers" />
+                <label for="Offers">New Offers</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="notification">
+            <h2>SMS Notifications</h2>
+            <div class="checkbox_div fwrap flex gap">
+              <div class="checkboxs gap flex_center">
+                <input type="checkbox" name="smyorders" id="smyorders" />
+                <label for="smyorders">My Orders</label>
+              </div>
+
+              <div class="checkboxs gap flex_center">
+                <input type="checkbox" name="sReminder" id="sReminder" />
+                <label for="sReminder">Reminder for Cart & Wishlist</label>
+              </div>
+
+              <div class="checkboxs gap flex_center">
+                <input type="checkbox" name="sOffers" id="sOffers" />
+                <label for="sOffers">New Offers</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- code for footer -->
+
+    <section class="footer_upperDiv">
+      <div class="footer_contact fixed">
+        <div class="flex flex_col">
+          <h2>Address</h2>
+          <p>Crystals & Carats</p>
+          <p>Plot No 44, 45, Street Number 14,</p>
+          <p>Marol MIDC Industry Estate,</p>
+          <p>Andheri East,Mumbai - 400093</p>
+        </div>
+        <div class="flex flex_col help_section">
+          <a href="./aboutus.html">
+            <h2>Help & Info</h2>
+          </a>
+          <a href="./aboutus.html">
+            <p>About</p>
+            <p>Crystals & Carats</p>
+          </a>
+          <a href="./careers.html">
+            <p>Careers</p>
+          </a>
+          <a href="./loginaccountfaq.html">
+            <p>Blogs FAQs</p>
+          </a>
+        </div>
+        <div class="flex flex_col call_section">
+          <h2>Contact Us</h2>
+          <p class="flex_center">
+            <img src="./images/callicon.svg" alt="" /> 1809-908-5647
+          </p>
+          <p class="flex_center">
+            <img src="./images/getintouchicon.svg" alt="" /> Get in Touch
+          </p>
+          <p class="flex_center">
+            <img src="./images/chaticon.svg" alt="" /> Chat With Us
+          </p>
+        </div>
+        <div class="flex flex_col">
+          <h2>Useful links</h2>
+          <p>Privacy Police</p>
+          <p>Terms of Service</p>
+          <p>Payment Issues</p>
+          <p>Net Banking</p>
+          <p>Custom Jewellery</p>
+        </div>
+        <div class="flex flex_col">
+          <h2>Location</h2>
+          <img src="./images/location.png" alt="" />
+        </div>
+      </div>
+      <div class="follow_us flex_center_centerAll">
+        <h2>Follow Us on :</h2>
+        <div class="follow_us_img flex_center_centerAll">
+          <img class="fb_img" src="./images/fb.svg" alt="" />
+          <img src="./images/insta.svg" alt="" />
+          <img src="./images/whatsapp.svg" alt="" />
+          <img src="./images/twitter.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer flex_center_centerAll">
+      <h2>@2023 Crystals & Carats. All Rights Reserved.</h2>
+    </footer>
+
+    <script src="js.js"></script>
+
+    <script>
+      const menuBar = document.querySelector(".menu_sidebar2");
+
+      const sidebar2 = document.querySelector(".profile_sidebar");
+      if (menuBar) {
+        menuBar.addEventListener("click", () => {
+          sidebar2.classList.toggle("opensidebar2");
+        });
+      }
+    </script>
+  </body>
+</html>

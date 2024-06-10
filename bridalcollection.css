@@ -1,0 +1,54 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./sidebar.css");
+
+.home_container_heading {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.contentDivbridal {
+  flex: 1;
+  padding: 20px;
+}
+
+.contentDiv_Section h2 {
+  padding: 30px 15px;
+  font-size: 1.4rem;
+}
+
+.contentDiv_imageDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  place-items: center;
+}
+
+.contentDiv_imageDiv img {
+  height: 280px;
+  object-fit: contain;
+  transition: .3s ease-in ;
+  cursor: pointer;
+}
+
+.contentDiv_imageDiv img:hover{
+  transform: scale(1.04)
+}
+
+@media screen and (max-width: 768px) {
+  .home_container_heading {
+    font-size: 1rem;
+  }
+
+  .menu_sidebar {
+    left: 5px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .home_container_heading {
+    font-size: 0.9rem;
+  }
+}

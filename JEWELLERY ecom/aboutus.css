@@ -1,0 +1,158 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+
+.container_help {
+  gap: 1rem;
+  position: relative;
+}
+
+.help_sidebar {
+  flex: 0.2;
+  background-color: white;
+  flex-direction: column;
+  padding: 20px 5px;
+  gap: 1rem;
+}
+
+.help_sidebar h2 {
+  color: var(--secondaryRed);
+  font-size: 1.4rem;
+}
+
+.links {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.help_sidebar p {
+  font-size: 1.2rem;
+}
+
+.active_link {
+  color: var(--secondaryRed);
+  border-bottom: 2px solid var(--secondaryRed);
+  width: max-content;
+}
+
+/* sidebar dropdown */
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown span {
+  font-size: 2rem;
+}
+
+.dropdownlink {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+}
+
+.dropdownlink a:hover {
+  text-decoration: underline;
+}
+
+.dropdownlinkToggle {
+  height: 150px;
+}
+
+/* help content */
+
+.help_content_body {
+  gap: 2rem;
+  padding: 20px 0;
+}
+
+.help_content {
+  flex: 0.8;
+  background-color: white;
+  padding: 20px 10px;
+}
+
+.help_content_header {
+  background-color: #e9bfbf;
+  padding: 10px 0;
+}
+
+.help_content_header h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.help_content_body {
+  margin-top: 10px;
+}
+
+.help_content_section {
+  padding: 20px 0;
+  gap: 1rem;
+}
+
+.help_content_section_heading h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.help_content_section_heading_body {
+  gap: 1rem;
+}
+
+.help_content_section_heading_body p {
+  font-size: 1.3rem;
+}
+
+/* help content footer */
+
+.help_content_footer {
+  padding: 20px 0;
+}
+
+.help_content_footer h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* menu */
+
+.menu_sidebar2 {
+  display: none;
+}
+
+.faqactive {
+  color: var(--secondaryRed);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .help_sidebar {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    padding: 30px 20px;
+  }
+  .help_content {
+    flex: 1;
+  }
+  .menu_sidebar2 {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    background-color: #e9bfbf;
+    top: -26px;
+    left: 10px;
+    color: var(--secondaryRed);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+
+  .opensidebar2 {
+    left: 0%;
+  }
+  .menu_sidebar2 span {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,58 @@
+@import url("/default.css");
+@import url("./profiledefault.css");
+@import url("./headerfooter.css");
+
+
+.coupons_section{
+    gap: 1rem;
+}
+
+.coupondiv {
+    border: 1px solid #fed7ba;
+  padding: 20px;
+  gap: 1rem;
+  background: #fed7ba;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+}
+
+.couponheader {
+  justify-content: space-between;
+}
+
+.couponheader h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--secondaryRed);
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.couponheader p {
+    font-size: 1.2rem;
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(73, 73, 73);
+    border-bottom: 2px solid rgb(73, 73, 73);
+}
+
+.couponbody p {
+  font-size: 1.2rem;
+}
+
+
+.viewmorebtn{
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--secondaryRed);
+    transition: .3s ease-in;
+    border: 1px solid var(--secondaryRed);
+
+}
+
+.viewmorebtn:hover{
+    background: transparent;
+    color: black;
+}

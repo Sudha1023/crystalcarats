@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./viewpayments.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header flex_center">
+      <nav>
+        <h2>Dashboard</h2>
+      </nav>
+      <div class="logo">
+        <img src="../images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="second_nav flex_center">
+          <li>
+            <a href="../profile.html">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+          </li>
+          <a href="./adminlogin.html">
+            <button class="btn_css">Login</button>
+        </a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- sidebar main div code -->
+      <div class="flex">
+        <div class="sidebar flex flex_col">
+          <a href="./insertproduct.html" >
+            <p>Product</p>
+          </a>
+          <a href="./categories.html" >
+            <p>Categories</p>
+          </a>
+          <a href="./sliderimg.html" >
+            <p>Slider Images</p>
+          </a>
+          <a  href="./viewcustomer.html">
+            <p>View Customer</p>
+          </a>
+          <a href="./vieworder.html" >
+            <p>View Orders</p>
+          </a>
+          <a href="#" class="active_tag">
+            <p>View Payments</p>
+          </a>
+        </div>
+        <div class="menu_sidebar">
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <!-- sidebar code end -->
+        <!-- content code start -->
+        <div class="contentDivbestseller fixed">
+          <h2 class="main_heading">Payment Method</h2>
+            <div class="payment_method_div flex flex_col">
+              <div class="payment_method_inner_div flex_center">
+                <div class="flex_center_centerAll gap">
+                  <input type="checkbox" name="" id="cash">
+                  <label for="cash">Cash On Delivery</label>
+                </div>
+                <div class="flex_center_centerAll gap">
+                  <button class="activebtn">Active</button>
+                  <button>Inactive</button>
+                </div>
+              </div>
+              <div class="payment_method_inner_div flex_center">
+                <div class="flex_center_centerAll gap">
+                  <input type="checkbox" name="" id="credit">
+                  <label for="credit">Credit/Debit Card</label>
+                </div>
+                <div class="flex_center_centerAll gap">
+                  <button class="activebtn">Active</button>
+                  <button>Inactive</button>
+                </div>
+              </div>
+              <div class="payment_method_inner_div flex_center">
+                <div class="flex_center_centerAll gap">
+                  <input type="checkbox" name="" id="upi">
+                  <label for="upi">UPI</label>
+                </div>
+                <div class="flex_center_centerAll gap">
+                  <button class="activebtn">Active</button>
+                  <button>Inactive</button>
+                </div>
+              </div>
+            </div>
+
+          <div class="table_div">
+            <table class="table">
+              <thead class="">
+                <tr>
+                  <th>Payment Id</th>
+                  <th>Invoice Number</th>
+                  <th>Amount Paid</th>
+                  <th>Payment Mode</th>
+                  <th>Txn number</th>
+                  <th>Payment Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bb">
+                  <td>1</td>
+                  <td>INV-9784-565-313</td>
+                  <td>4685</td>
+                  <td>Cash</td>
+                  <td>65406754378</td>
+                  <td class="status_div ">
+                      <button class="received">Received</button>
+                  </td>
+                </tr>   
+                <tr class="bb">
+                  <td>2</td>
+                  <td>INV-8784-565-323</td>
+                  <td>5000</td>
+                  <td>Upi</td>
+                  <td>65406714378</td>
+                  <td class="status_div ">
+                      <button class="pending">Pending</button>
+                  </td>
+                </tr>  
+                <tr class="bb">
+                  <td>3</td>
+                  <td>INV-9783-565-323</td>
+                  <td>1685</td>
+                  <td>Cash</td>
+                  <td>65406754278</td>
+                  <td class="status_div ">
+                      <button class="pending">Pending</button>
+                  </td>
+                </tr>             
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar main div -->
+    </div>
+
+    <script src="../js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+@import url("./insertProduct.css");
+@import url("./viewcustomer.css");
+
+
+.status_div button{
+    padding: 5px;
+    outline: none;
+    color: white;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.status_div button:hover{
+    background:transparent;
+    color: black;
+}
+
+.status_div .received{
+    background-color: #1dd1a1;
+    border: 2px solid #1dd1a1;
+}
+
+.status_div .pending{
+    background-color: #d1561d;
+    border: 2px solid #d1561d;
+}
+
+.payment_method_div {
+    padding: 30px 10px;
+    gap: 2rem;
+}
+
+.payment_method_inner_div{
+    gap: 3rem;
+    max-width: 500px;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input {
+    
+    width: 1.3rem;
+    height: 1.3rem;
+    accent-color: #d9d9d9;
+    border: none;
+    outline: none;
+  
+}
+
+button{
+    padding: 10px 15px;
+    border: 1px solid var(--secondaryRed);
+    outline: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.activebtn{
+    background-color: rgb(43, 134, 187);
+}

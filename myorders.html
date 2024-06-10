@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./myorders.css" />
+    <title>My Order</title>
+  </head>
+  <body>
+    <!-- code for header -->
+    <header class="header flex_center">
+      <div class="ham">
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+      <nav>
+        <ul class="first_nav flex_center">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./crystals.html">Shop</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="second_nav flex_center">
+          <li>
+            <a href="#">
+              <img src="./images/heart.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./cart.html"> <img src="./images/cart.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container_profile flex">
+      <div class="profile_sidebar flex">
+      <div class="sidebar_heading flex_center">
+        <a href="./profile.html">
+            <span class="material-symbols-outlined">
+                arrow_back_ios
+            </span>
+        </a>
+          <p>Home > Profile > My Orders</p>
+        </div>
+
+        <h2>Filters</h2>
+
+        <div class="filter_container flex flex_col">
+            <h2>ORDER STATUS</h2>
+            <div class="flex_center gap">
+                <input type="checkbox" name="onway" id="onway">
+                <label for="onway">On the way</label>
+            </div>
+            <div class="flex_center gap">
+                <input type="checkbox" name="Delivered" id="Delivered">
+                <label for="Delivered">Delivered</label>
+            </div>
+            <div class="flex_center gap">
+                <input type="checkbox" name="Cancelled" id="Cancelled">
+                <label for="Cancelled">Cancelled</label>
+            </div>
+            <div class="flex_center gap">
+                <input type="checkbox" name="Returned" id="Returned">
+                <label for="Returned">Returned</label>
+            </div>
+               
+        </div>
+
+        <div class="filter_container flex flex_col">
+            <h2>ORDER TIME</h2>
+            <div class="flex_center gap">
+                <input type="checkbox" name="30day" id="30day">
+                <label for="30day">Last 30 Days</label>
+            </div>
+            <div class="flex_center gap">
+                <input type="checkbox" name="2023" id="2023">
+                <label for="2023">2023</label>
+            </div>
+            <div class="flex_center gap">
+                <input type="checkbox" name="2022" id="2022">
+                <label for="2022">2022</label>
+            </div>
+            <div class="flex_center gap">
+                <input type="checkbox" name="2021" id="2021">
+                <label for="2021">2021</label>
+            </div>
+
+            <div class="flex_center gap">
+                <input type="checkbox" name="older" id="older">
+                <label for="older">Older</label>
+            </div>
+
+                
+               
+        </div>
+
+
+
+      </div>
+      <div class="menu_sidebar2">
+        <span class="material-symbols-outlined"> arrow_drop_down </span>
+      </div>
+      <div class="profile_content fixed">
+        <h2 class="profile_mainheading">My Orders</h2>
+        <div class="header_search flex_center">
+            <span class="material-symbols-outlined">
+                search
+                </span>
+            <input type="search" placeholder="Search your orders here">
+        </div>
+
+
+        <div class="reviews_container flex flex_col">
+            <div class="review_card flex">
+              <div class="review_img">
+                <img src="./images/Rectangle 200.png" alt="" />
+              </div>
+              <div class="review_content flex flex_col">
+                <div class="review_content_header ">
+                  <h2>Crystals & Carats</h2>
+                </div>
+                <div class="detail_container">
+                  <p>Stylish Golden Necklace 20carat Gold Necklace</p>
+                 
+                  <h3 class="bold">Category: Gold</h3>
+                    
+                <h2 class="price">Rs 7000</h2>
+                  <div class="flex_center gap bottom_div">
+                    <div class="flex_center gap delivery">
+                        <div class="circle"></div>
+                        <p>Delivered on Oct 14, 2023</p>
+                    </div>
+                    <div class="flex_center gap review">
+                        <span class="material-symbols-outlined">
+                            star
+                            </span>
+                        <p>Rate & Review</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review_card flex">
+                <div class="review_img">
+                  <img src="./images/Rectangle 203.png" alt="" />
+                </div>
+                <div class="review_content flex flex_col">
+                  <div class="review_content_header ">
+                    <h2>Crystals & Carats</h2>
+                  </div>
+                  <div class="detail_container">
+                    <p>Stylish Golden Necklace 20carat Gold Necklace</p>
+                   
+                    <h3 class="bold">Category: Diamond</h3>
+                      
+                  <h2 class="price">Rs 6000</h2>
+                    <div class="flex_center gap bottom_div">
+                      <div class="flex_center gap delivery">
+                          <div class="circle"></div>
+                          <p>Delivered on Oct 14, 2023</p>
+                      </div>
+                      <div class="flex_center gap review">
+                          <span class="material-symbols-outlined">
+                              star
+                              </span>
+                          <p>Rate & Review</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+          
+          </div>
+
+
+      </div>
+    </div>
+
+    <!-- code for footer -->
+
+    <section class="footer_upperDiv">
+      <div class="footer_contact fixed">
+        <div class="flex flex_col">
+          <h2>Address</h2>
+          <p>Crystals & Carats</p>
+          <p>Plot No 44, 45, Street Number 14,</p>
+          <p>Marol MIDC Industry Estate,</p>
+          <p>Andheri East,Mumbai - 400093</p>
+        </div>
+        <div class="flex flex_col help_section">
+          <a href="./aboutus.html">
+            <h2>Help & Info</h2>
+          </a>
+          <a href="./aboutus.html">
+            <p>About</p>
+            <p>Crystals & Carats</p>
+          </a>
+          <a href="./careers.html">
+            <p>Careers</p>
+          </a>
+          <a href="./loginaccountfaq.html">
+            <p>Blogs FAQs</p>
+          </a>
+        </div>
+        <div class="flex flex_col call_section">
+          <h2>Contact Us</h2>
+          <p class="flex_center">
+            <img src="./images/callicon.svg" alt="" /> 1809-908-5647
+          </p>
+          <p class="flex_center">
+            <img src="./images/getintouchicon.svg" alt="" /> Get in Touch
+          </p>
+          <p class="flex_center">
+            <img src="./images/chaticon.svg" alt="" /> Chat With Us
+          </p>
+        </div>
+        <div class="flex flex_col">
+          <h2>Useful links</h2>
+          <p>Privacy Police</p>
+          <p>Terms of Service</p>
+          <p>Payment Issues</p>
+          <p>Net Banking</p>
+          <p>Custom Jewellery</p>
+        </div>
+        <div class="flex flex_col">
+          <h2>Location</h2>
+          <img src="./images/location.png" alt="" />
+        </div>
+      </div>
+      <div class="follow_us flex_center_centerAll">
+        <h2>Follow Us on :</h2>
+        <div class="follow_us_img flex_center_centerAll">
+          <img class="fb_img" src="./images/fb.svg" alt="" />
+          <img src="./images/insta.svg" alt="" />
+          <img src="./images/whatsapp.svg" alt="" />
+          <img src="./images/twitter.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer flex_center_centerAll">
+      <h2>@2023 Crystals & Carats. All Rights Reserved.</h2>
+    </footer>
+
+    <script src="js.js"></script>
+
+    <script>
+      const menuBar = document.querySelector(".menu_sidebar2");
+
+      const sidebar2 = document.querySelector(".profile_sidebar");
+      if (menuBar) {
+        menuBar.addEventListener("click", () => {
+          sidebar2.classList.toggle("opensidebar2");
+        });
+      }
+    </script>
+  </body>
+</html>

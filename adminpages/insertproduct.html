@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./insertProduct.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header class="header flex_center">
+      <nav>
+        <h2>Dashboard</h2>
+      </nav>
+      <div class="logo">
+        <img src="../images/logo.png" alt="" />
+      </div>
+      <nav>
+        <ul class="second_nav flex_center_centerAll">
+          <li>
+            <a href="../profile.html">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </a>
+          </li>
+          <a href="./adminlogin.html">
+            <button class="btn_css">Login</button>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- sidebar main div code -->
+      <div class="flex">
+        <div class="sidebar flex flex_col">
+          <a href="#" class="active_tag">
+            <p>Product</p>
+          </a>
+          <a href="./categories.html">
+            <p>Categories</p>
+          </a>
+          <a href="./sliderimg.html">
+            <p>Slider Images</p>
+          </a>
+          <a href="./viewcustomer.html">
+            <p>View Customer</p>
+          </a>
+          <a href="./vieworder.html">
+            <p>View Orders</p>
+          </a>
+          <a href="./viewpayments.html">
+            <p>View Payments</p>
+          </a>
+        </div>
+        <div class="menu_sidebar">
+          <span class="material-symbols-outlined"> expand_more </span>
+        </div>
+        <!-- sidebar code end -->
+        <!-- content code start -->
+        <div class="contentDivbestseller fixed">
+          <h2 class="main_heading">Insert Product</h2>
+          <div class="insert_product_div flex_center_centerAll flex_col">
+            <div class="insert_inner_div flex_center">
+              <label for="title">Product Title</label>
+              <input type="text" id="title" placeholder="Enter Your Title" />
+            </div>
+            <div class="insert_inner_div flex_center">
+              <label for="keyword">Product Keyword</label>
+              <select name="category" id="">
+                <option value="Gold" selected>Gold</option>
+                <option value="platinum" >Platinum</option>
+              </select>
+            </div>
+            <div class="insert_inner_div flex_center">
+              <label for="Category">Product Category</label>
+              <select name="category" id="">
+                <option value="carats" selected>Carats</option>
+                <option value="diamond" >Diamond</option>
+              </select>
+            </div>
+            <div class="insert_inner_div flex">
+              <label for="img">Product Image</label>
+              <div class="flex_col flex gap whalf">
+                <div class="imgpreview"></div>
+                <input type="file" class="imgselect" id="img" placeholder="Enter Your Category" />
+              </div>
+            </div>
+            <div class="insert_inner_div flex">
+              <label for="desc">Product Description</label>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Enter Your Category"
+              ></textarea>
+            </div>
+            <div class="insert_inner_div buttons flex_center gap">
+              <button class="insertbtn">INSERT PRODUCT</button>
+
+              <a href="./adminviewproduct.html">
+                <button class="viewbtn">VIEW PRODUCT</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar main div -->
+    </div>
+
+    <script src="../js.js"></script>
+  </body>
+</html>

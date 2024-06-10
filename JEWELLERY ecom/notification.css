@@ -1,0 +1,23 @@
+@import url("/default.css");
+@import url("./profiledefault.css");
+@import url("./headerfooter.css");
+
+.notification_div {
+  gap: 2rem;
+}
+
+.notification h2{
+  padding: 10px 0;
+}
+
+.checkbox_div {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkbox_div input {
+  height: 1.2rem;
+  width: 1.2rem;
+  accent-color: #cecece;
+}

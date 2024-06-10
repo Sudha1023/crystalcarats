@@ -1,0 +1,71 @@
+@import url("./default.css");
+@import url("./headerfooter.css");
+@import url("./profiledefault.css");
+
+
+.upi_container{
+    padding: 20px 0;
+}
+
+.upi_container .second_heading{
+    font-size: 1.4rem;
+    padding: 10px 0;
+}
+
+.upi_card{
+    gap: 1rem;
+    padding: 20px 0;
+}
+
+.upi_heading{
+    gap: 1rem;
+}
+
+.upi_heading input{
+    width: 1.3rem;
+    height: 1.3rem;
+    accent-color: var(--secondaryRed);
+}
+
+.upi_heading label{
+    font-size: 1.2rem;
+}
+
+.upi_body {
+    border: 2px solid var(--secondaryRed);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.upi_body input{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.upi_body p{
+    color: rgb(149, 149, 149);
+}
+
+.save_btn{
+    max-width: 150px;
+}
+
+
+.btn_css{
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--secondaryRed);
+    transition: .3s ease-in;
+    border: 1px solid var(--secondaryRed);
+
+}
+
+.btn_css:hover{
+    background: transparent;
+    color: black;
+}

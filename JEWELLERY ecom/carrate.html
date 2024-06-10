@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Section</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.category {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #e0e0e0;
+}
+
+
+</style>
+<body>
+
+<div class="category-container" id="categoryContainer">
+    <!-- Categories will be dynamically added here -->
+</div>
+
+<script>document.addEventListener("DOMContentLoaded", function () {
+    // Sample categories
+    const categories = ["Category 1", "Category 2", "Category 3", "Category 4"];
+
+    // Get the category container
+    const categoryContainer = document.getElementById("categoryContainer");
+
+    // Populate the category container
+    categories.forEach(category => {
+        const categoryElement = document.createElement("div");
+        categoryElement.classList.add("category");
+        categoryElement.textContent = category;
+        categoryContainer.appendChild(categoryElement);
+    });
+});
+</script>
+</body>
+</html>

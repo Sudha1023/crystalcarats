@@ -1,0 +1,28 @@
+.scroll_to_top {
+  margin-right: 0;
+  margin-left: 100px;
+}
+
+.sidebar {
+  top: 35px;
+}
+
+.menu_sidebar {
+  top: 0px;
+}
+
+.offLabel {
+  padding: 50px 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .offLabel {
+    width: 100%;
+  }
+  .scroll_to_top {
+    margin: 0;
+  }
+}
